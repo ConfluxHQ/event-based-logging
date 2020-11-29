@@ -16,14 +16,15 @@ Event-based logging is designed to be a simple, expressive approach to exploring
 2. Use exactly one of these event codes in the log message when logging
 3. Use an `enum` type or equivalent for compile-time checking of uniqueness and searchability
 4. Get auto-complete from the IDE or REPL when choosing an event to log
-5. Simple SHIFT-select or double-click on an event name to copy/paste into a log search tool - no manual selectio nof multiple words
+5. Simple SHIFT-select or double-click on an event name to copy/paste into a log search tool - no manual selection of multiple words for copy/paste
 6. ...
 
 ## Examples
 
 A key aim is to "lean on the compiler" for compile-time verification of the Event types when logging. This in turn means we get auto-complete when choosing an Event type during logging:
 
-```
+```JavaScript
+
 // Nodejs example for event-based logging
 
 const Events = Object.freeze({
@@ -33,6 +34,7 @@ const Events = Object.freeze({
   });
   
   // console.log(Events.Fai --> auto-complete 
+
 ```
 
 More detailed examples:
