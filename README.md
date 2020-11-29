@@ -40,4 +40,4 @@ const Events = Object.freeze({
 More detailed examples:
 
 * C#: CSharp-example.cs - tbc
-* NodeJS: [NodeJA-example.js](examples/NodeJS-example.js)
+* NodeJS: [NodeJS-example.js](examples/NodeJS-example.js)
