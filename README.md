@@ -42,4 +42,4 @@ const Events = Object.freeze({
 More detailed examples:
 
 * C#: [CSharp-example.cs](examples/cs/EventBasedLoggingExample/CSharp-example.cs)
-* NodeJS: [NodeJS-example.js](examples/NodeJS-example.js)
+* NodeJS: [NodeJS-example.js](examples/js/NodeJS-example.js)
