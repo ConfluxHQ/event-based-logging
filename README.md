@@ -37,7 +37,7 @@ const Events = Object.freeze({
 
 ```
 
-![Screenshot of event-based logging showing code completion when choosing an event type during logging](examples/2020-08-27--RTCE-nodejs-enum-crop.png)
+![Screenshot of event-based logging showing code completion when choosing an event type during logging](examples/event-based-logging--nodejs-enum-crop.png.png)
 
 More detailed examples:
 
