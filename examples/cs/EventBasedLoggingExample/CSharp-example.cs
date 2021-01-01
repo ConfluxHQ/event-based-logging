@@ -1,3 +1,7 @@
+// Event-based logging example in C# DotNet Core 5.0
+// 
+// Usage: `dotnet run` from the project folder in vscode
+
 using System;
 
 namespace EventBasedLoggingExample
