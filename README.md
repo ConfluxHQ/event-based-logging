@@ -17,7 +17,7 @@ Event-based logging is designed to be a simple, expressive approach to exploring
 3. Use an `enum` type or equivalent for compile-time checking of uniqueness and searchability
 4. Get code-completion from the IDE or REPL when choosing an event to log
 5. Simple SHIFT-select or double-click on an event name to copy/paste into a log search tool - no manual selection of multiple words for copy/paste
-6. ...
+6. Avoid the need for a single cross-team events library by scoping events to specific services.
 
 ## Examples
 
@@ -39,7 +39,45 @@ const Events = Object.freeze({
 
 ![Screenshot of event-based logging showing code completion when choosing an event type during logging](examples/event-based-logging--nodejs-enum-crop.png)
 
-More detailed examples:
+### Service-scoped events
+
+It is very useful to be able to search for similar events across multiple services, especially in large, distributed systems with multiple teams and services. Searching for `*FailedToConnect*` in a log search tool to find all service connection failures is a powerful observability technique.
+
+However, avoid the temptation to create a single, cross-team library containing all possible events; this introduces coupling between services that introduce blocking dependencies between teams. Instead, use service-scoped (or team-scoped) event names. For example, the Payments team may have this set of events defined:
+
+```JavaScript
+
+// PaymentsService events
+
+const Events = Object.freeze({
+    PaymentsUndefinedError : 'PaymentsUndefinedError',
+    PaymentsFailedToConnectToDatabase : 'PaymentsFailedToConnectToDatabase',
+    PaymentsUnexpectedTokenInParseStream : 'PaymentsUnexpectedTokenInParseStream',
+  });
+
+  // console.log(Events.PaymentsFai --> auto-complete
+
+```
+
+The License team may have this set of events defined:
+
+```JavaScript
+
+// LicenseService events
+
+const Events = Object.freeze({
+    LicenseUndefinedError : 'LicenseUndefinedError',
+    LicenseFailedToConnectToDatabase : 'LicenseFailedToConnectToDatabase',
+    LicenseUnexpectedTokenInParseStream : 'LicenseUnexpectedTokenInParseStream',
+  });
+
+  // console.log(Events.LicenseFai --> auto-complete
+
+```
+
+We can still search for `*UnexpectedToken*` events across services when necessary, but without the need for a shared library dependency.
+
+## More detailed examples:
 
 * C#: [CSharp-example.cs](examples/cs/EventBasedLoggingExample/CSharp-example.cs)
 * NodeJS: [NodeJS-example.js](examples/js/NodeJS-example.js)
