@@ -1,6 +1,6 @@
 # Event-based logging
 
-Event-based logging helps to clarify operability of software systems. This repo has examples and principles.
+Event-based logging helps to clarify operability of software systems by identifying possible failure modes and key execution events. This repo has examples and principles.
 
 > Copyright © 2018-2021 [Conflux](https://confluxdigital.net/) - Licenced under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) ![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/3.0/88x31.png)
 
