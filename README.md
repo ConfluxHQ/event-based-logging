@@ -8,6 +8,19 @@ Event-based logging helps to clarify operability of software systems by identify
 
 > Event-based logging uses compile-time `enum`-based event definitions when logging to make runtime diagnosis and team-member onboarding clearer and easier. 
 
+## Benefits
+
+When implemented with teams empowered to make useful improvements, event-based logging can:
+
+1. Increase software reliability through improved definition of software behavior
+1. Provide a common interface between developers and Ops/SRE
+1. Increase operational awareness in developers 
+1. Clean up logging: reduce “logorrhoea” (verbose logs)
+1. Help to prepare for approaches like Domain-driven Design (DDD) and Event-sourcing
+1. Reduce onboarding time for new team members
+
+Treat logging as a two-way communication channel between people building systems and people running systems; this could be two separate teams or it could be the same team at different times of the week.
+
 ## Principles
 
 Event-based logging is designed to be a simple, expressive approach to exploring failure modes and real-world operational behaviour for all kinds of software.
@@ -81,3 +94,7 @@ We can still search for `*UnexpectedToken*` events across services when necessar
 
 * C#: [CSharp-example.cs](examples/cs/EventBasedLoggingExample/CSharp-example.cs)
 * NodeJS: [NodeJS-example.js](examples/js/NodeJS-example.js)
+
+# Read more
+
+* [Team Guide to Software Operability by Matthew Skelton, Alex Moore, and Rob Thatcher (2019)](http://operabilitybook.com/) 📙
