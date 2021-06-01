@@ -14,8 +14,9 @@ When implemented with teams empowered to make useful improvements, event-based l
 
 1. Increase software reliability through improved definition of software behavior
 1. Provide a common interface between developers and Ops/SRE
-1. Increase operational awareness in developers 
-1. Clean up logging: reduce “logorrhoea” (verbose logs)
+1. Increase operational awareness in developers
+1. Decrease "time-to-diagnose" for live incidents
+1. Clean up logging: reduce "logorrhoea" (verbose logs)
 1. Help to prepare for approaches like Domain-driven Design (DDD) and Event-sourcing
 1. Reduce onboarding time for new team members
 
