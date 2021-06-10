@@ -61,6 +61,7 @@ const Events = Object.freeze({
   // console.log(Events.TokenVal --> auto-complete 
 
 ```
+Screenshot of code-completion with Events:
 
 ![Screenshot of event-based logging showing code completion when choosing an event type during logging](examples/event-based-logging--nodejs-enum-crop.png)
 
