@@ -1,8 +1,18 @@
 const Events = Object.freeze({
     UndefinedError : 'UndefinedError',
-    FailedToConnectToDatabase : 'FailedToConnectToDatabase',
-    UnexpectedTokenInParseStream : 'UnexpectedTokenInParseStream',
-    HttpResponseSuccessful : 'HttpResponseSuccessful'
+    DatabaseConnectionSuccess : 'DatabaseConnectionSuccess',
+    DatabaseConnectionFailure : 'DatabaseConnectionFailure',
+    DatabaseConnectionTimeout : 'DatabaseConnectionTimeout',
+    ParseStreamUnexpectedToken : 'ParseStreamUnexpectedToken',
+    ParseStreamMissingData : 'ParseStreamMissingData',
+    ParseStreamSuccess : 'ParseStreamSuccess',
+    TokenValidationSucceeded : 'TokenValidationSucceeded',
+    TokenValidationFailedInvalidParams : 'TokenValidationFailedInvalidParams',
+    TokenValidationFailedInvalidDigest : 'okenValidationFailedInvalidDigest',
+    TokenValidationFailedIncorrectSHA : 'TokenValidationFailedIncorrectSHA',
+    AppStarted : 'AppStarted',
+    AppShutdownRequested : 'AppShutdownRequested',
+    NoOp : 'NoOp'
   });
 
 

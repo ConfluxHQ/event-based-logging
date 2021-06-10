@@ -53,6 +53,11 @@ const Events = Object.freeze({
 
 ![Screenshot of event-based logging showing code completion when choosing an event type during logging](examples/event-based-logging--nodejs-enum-crop.png)
 
+See examples of Event definitions:
+
+* C#: [ApplicationEvents.cs](examples/cs/EventBasedLoggingExample/ApplicationEvents.cs)
+* Node.js: [appEvents.js](examples/js/appEvents.js)
+
 ### Service-scoped events
 
 It is very useful to be able to search for similar events across multiple services, especially in large, distributed systems with multiple teams and services. Searching for `*FailedToConnect*` in a log search tool to find all service connection failures is a powerful observability technique.
@@ -94,7 +99,7 @@ We can still search for `*UnexpectedToken*` events across services when necessar
 ## More detailed examples:
 
 * C#: [CSharp-example.cs](examples/cs/EventBasedLoggingExample/CSharp-example.cs)
-* NodeJS: [NodeJS-example.js](examples/js/NodeJS-example.js)
+* Node.js: [NodeJS-example.js](examples/js/NodeJS-example.js)
 
 # Read more
 
