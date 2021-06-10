@@ -43,11 +43,22 @@ A key aim is to "lean on the compiler" for compile-time verification of the Even
 
 const Events = Object.freeze({
     UndefinedError : 'UndefinedError',
-    FailedToConnectToDatabase : 'FailedToConnectToDatabase',
-    UnexpectedTokenInParseStream : 'UnexpectedTokenInParseStream',
+    DatabaseConnectionSuccess : 'DatabaseConnectionSuccess',
+    DatabaseConnectionFailure : 'DatabaseConnectionFailure',
+    DatabaseConnectionTimeout : 'DatabaseConnectionTimeout',
+    ParseStreamUnexpectedToken : 'ParseStreamUnexpectedToken',
+    ParseStreamMissingData : 'ParseStreamMissingData',
+    ParseStreamSuccess : 'ParseStreamSuccess',
+    TokenValidationSucceeded : 'TokenValidationSucceeded',
+    TokenValidationFailedInvalidParams : 'TokenValidationFailedInvalidParams',
+    TokenValidationFailedInvalidDigest : 'okenValidationFailedInvalidDigest',
+    TokenValidationFailedIncorrectSHA : 'TokenValidationFailedIncorrectSHA',
+    AppStarted : 'AppStarted',
+    AppShutdownRequested : 'AppShutdownRequested',
+    NoOp : 'NoOp'
   });
   
-  // console.log(Events.Fai --> auto-complete 
+  // console.log(Events.TokenVal --> auto-complete 
 
 ```
 
