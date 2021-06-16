@@ -13,8 +13,9 @@ Event-based logging helps to clarify operability of software systems by identify
 When implemented with teams empowered to make useful improvements, event-based logging can:
 
 1. Increase software reliability through improved definition of software behavior
-1. Provide a common interface between developers and Ops/SRE
-1. Increase operational awareness in developers
+1. Provide a common interface between developers and Ops / SRE / live service support, or between one team and other team
+1. Increase operational awareness in developers _and_ Product Managers / Product Managers
+1. Explore software run-time behaviour without actually running the code
 1. Decrease "time-to-diagnose" for live incidents
 1. Clean up logging: reduce "logorrhoea" (verbose logs)
 1. Help to prepare for approaches like Domain-driven Design (DDD) and Event-sourcing
@@ -32,6 +33,7 @@ Event-based logging is designed to be a simple, expressive approach to exploring
 4. Get code-completion from the IDE or REPL when choosing an event to log
 5. Simple SHIFT-select or double-click on an event name to copy/paste into a log search tool - no manual selection of multiple words for copy/paste
 6. Avoid the need for a single cross-team events library by scoping events to specific services.
+7. Avoid the need for complex [regex](https://www.regular-expressions.info/) searches in log tools: just search for a single, guaranteed-unique string.
 
 ## Examples
 
@@ -110,8 +112,8 @@ We can still search for `*UnexpectedToken*` events across services when necessar
 
 ## More detailed examples:
 
-* C#: [CSharp-example.cs](examples/cs/EventBasedLoggingExample/CSharp-example.cs)
-* Node.js: [NodeJS-example.js](examples/js/NodeJS-example.js)
+* C#: [CSharp-example.cs](examples/cs/)
+* Node.js: [NodeJS-example.js](examples/js/)
 
 # Read more
 
