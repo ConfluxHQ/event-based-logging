@@ -18,7 +18,7 @@ When implemented with teams empowered to make useful improvements, event-based l
 1. Explore software run-time behaviour without actually running the code
 1. Decrease "time-to-diagnose" for live incidents
 1. Clean up logging: reduce "logorrhoea" (verbose logs)
-1. Help to prepare for approaches like Domain-driven Design (DDD) and Event-sourcing
+1. Help to prepare for approaches like Domain-driven Design (DDD), Event-sourcing, and Chaos Engineering / Resilience Engineering
 1. Reduce onboarding time for new team members
 
 Treat logging as a two-way communication channel between people building systems and people running systems; this could be two separate teams or it could be the same team at different times of the week.
