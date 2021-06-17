@@ -10,8 +10,8 @@ const Events = Object.freeze({
     ParseStreamUnexpectedToken : 'ParseStreamUnexpectedToken',
     ParseStreamMissingData : 'ParseStreamMissingData',
     ParseStreamSuccess : 'ParseStreamSuccess',
-    
-    // TOken validation events
+
+    // Token validation events
     TokenValidationSucceeded : 'TokenValidationSucceeded',
     TokenValidationFailedInvalidParams : 'TokenValidationFailedInvalidParams',
     TokenValidationFailedInvalidDigest : 'TokenValidationFailedInvalidDigest',

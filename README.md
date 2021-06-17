@@ -14,7 +14,7 @@ When implemented with teams empowered to make useful improvements, event-based l
 
 1. Increase software reliability through improved definition of software behavior
 1. Provide a common interface between developers and Ops / SRE / live service support, or between one team and other team
-1. Increase operational awareness in developers _and_ Product Managers / Product Managers
+1. Increase operational awareness in developers _and_ Product Managers / Product Owners
 1. Explore software run-time behaviour without actually running the code
 1. Decrease "time-to-diagnose" for live incidents
 1. Clean up logging: reduce "logorrhoea" (verbose logs)
@@ -45,18 +45,28 @@ A key aim is to "lean on the compiler" for compile-time verification of the Even
 
 const Events = Object.freeze({
     UndefinedError : 'UndefinedError',
+
+    // Database events
     DatabaseConnectionSuccess : 'DatabaseConnectionSuccess',
     DatabaseConnectionFailure : 'DatabaseConnectionFailure',
     DatabaseConnectionTimeout : 'DatabaseConnectionTimeout',
+
+    // Parsing events
     ParseStreamUnexpectedToken : 'ParseStreamUnexpectedToken',
     ParseStreamMissingData : 'ParseStreamMissingData',
     ParseStreamSuccess : 'ParseStreamSuccess',
+
+    // Token validation events
     TokenValidationSucceeded : 'TokenValidationSucceeded',
     TokenValidationFailedInvalidParams : 'TokenValidationFailedInvalidParams',
-    TokenValidationFailedInvalidDigest : 'okenValidationFailedInvalidDigest',
+    TokenValidationFailedInvalidDigest : 'TokenValidationFailedInvalidDigest',
     TokenValidationFailedIncorrectSHA : 'TokenValidationFailedIncorrectSHA',
+
+    // Application lifecycle events
     AppStarted : 'AppStarted',
     AppShutdownRequested : 'AppShutdownRequested',
+
+    // Test event
     NoOp : 'NoOp'
   });
   
